@@ -3,7 +3,7 @@
     "description": "ZF2 Module implementing contact form functionality",
     "type": "library",
     "keywords": [
-        "zf2",
+        "zf3",
         "zend",
         "module"
     ],
@@ -17,14 +17,11 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "zendframework/zendframework": "2.*"
+        "zendframework/zendframework": "3.*"
     },
     "autoload": {
-        "psr-0": {
-            "PhlyContact": "src/"
-        },
-        "classmap": [
-            "./"
-        ]
+        "psr-4": {
+            "PhlyContact\\": "src/"
+        }
     }
 }
